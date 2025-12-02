@@ -29,7 +29,7 @@ lcd = I2cLcd(i2c, I2C_ADDR, 2, 16)
 # ----- Lista de plantas -----
 plantas = [
     "Muña", "Matico", "Manzanilla", "Hercampuri",
-    "Toronjil", "Ruda", "Hierba Luisa", "Hierba Luisa",
+    "Toronjil", "Ruda", "Hierba Luisa", 
     "Eucalipto", "Sabila", "Tilo"
 ]
 indice_planta = 0

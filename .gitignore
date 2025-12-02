@@ -3,6 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 src/config.py
+src/config.py
+__pycache__/
+*.pyc
+.vscode/
 
 
 # C extensions

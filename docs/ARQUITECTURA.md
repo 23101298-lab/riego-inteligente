@@ -1,5 +1,3 @@
-# Arquitectura del sistema
-
 ```mermaid
 flowchart LR
 
@@ -21,10 +19,20 @@ flowchart LR
 
   subgraph RIEGO["Riego"]
     RELAY[Relay]
-    PUMP[Valvula / Bomba]
+    PUMP[Válvula / Bomba]
   end
 
   subgraph NUBE["Nube"]
-    API[A]()
+    API[API]
+    DASH[Dashboard]
+  end
 
-
+  HUM --> ADC
+  LDR --> ADC
+  DHT --> GPIO
+  DS  --> GPIO
+  ADC --> CPU
+  GPIO --> CPU
+  CPU --> RELAY --> PUMP
+  CPU --> WIFI --> API --> DASH
+```
